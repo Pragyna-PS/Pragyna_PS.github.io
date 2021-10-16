@@ -1,0 +1,132 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing:  content-box;
+}
+body{
+    background: rgb(77, 70, 126);
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+section{
+    position: center;
+    display: -ms-inline-flexbox;
+    align-items: center;
+    min-height: 100vh;
+}
+ h2{
+    position: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(227, 240, 241);
+     
+}
+.container{
+    width: 100%;
+    max-width: 1160px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    position: center; 
+}
+p{
+    color: #000000;
+    line-height: 1.6;
+    margin: 3rem 0;
+}
+.social a{
+    text-decoration: none;
+    color: rgb(44, 116, 184);
+    margin-right: 1rem;
+    transition: color .3s ease;
+    font-size: 1.3rem;
+}
+.social a:hover{
+    color: #0a0a5a;
+}
+
+input,textarea{
+
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: "LEMON MILK" ,Open sans-serif;
+    font-size: 20px;
+    padding: .75rem;
+    border-bottom: 2px solid rgb(31, 8, 46);
+    margin: .6rem 0;
+    border-radius: 2px;
+    box-sizing: content-box;
+    background: slategray;
+    resize: vertical;
+    transition: border .3s ease;
+}
+input:focus,textarea:focus{
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+::placeholder{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.form button{
+    width: 115px;
+    padding: .75rem 0;
+    border: none;
+    outline: none;
+    background: rgb(0, 0, 0);
+    color: #7d4e99;
+    font-size: 30px;
+    transition: opacity .3s ease;
+}
+.form button:hover{
+    opacity: .7;
+}
+footer{
+    position: fixed;
+    left: 35px;
+    bottom: 30px;
+    right: 35px;
+    width: 95%;
+    text-align: right;
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    padding-left: 500px;
+    padding-right: 500px;
+    width: 100%;
+    background-color: #6a6a6a;
+    overflow: auto;
+  }
+  .navbar a {
+    float: left;
+    text-align: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .navbar a:hover {
+    background-color: #000;
+  }
+  .active {
+    background-color: #bdb76b;
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  
+
